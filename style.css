@@ -167,15 +167,19 @@
     border: none;
 }
 
-.img2 {
-  margin-top: 140px;
-  opacity: 0;
-  transform: translateY(-250px) rotate(-10deg) scale(0.8);
-  transition: all 2.2s ease-out;
+.img2{
+    margin-top: 180px;
 }
 
-.img2.animate {
-  opacity: 1;
-  transform: translateY(0) rotate(0deg) scale(1);
+@keyframes landing {
+  0% {
+    opacity: 0;
+    transform: translateY(-700px) rotate(-12deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+  }
 }
 
